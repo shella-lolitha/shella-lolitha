@@ -51,7 +51,7 @@ The 40% tm99 target was deliberately conservative. RDS CPU behavior is nonlinear
 ### DBA Automation Workflows
 `n8n` `Python` `Bytebase` `Jira` `AWS CloudWatch` `pgaudit` `PostgreSQL`
 
-Repetitive operational work is the enemy of good database engineering — it crowds out the thinking time that actually improves the system. I've built a set of automation workflows at Kredivo to handle the recurring tasks, so the team can stay focused on work that requires judgment.
+Repetitive operational work is the enemy of good database engineering — it crowds out the thinking time that actually improves the system. I've built a set of automation workflows at companies I worked for to handle the recurring tasks, so the team can stay focused on work that requires judgment.
 
 - **Audit log analysis** — Queries CloudWatch Logs Insights against pgaudit SESSION logs on a schedule, parses entries with regex-based field extraction, and produces structured summaries by user, object, and statement type. Shifted audit from a reactive exercise to a routine one.
 - **Bytebase access approval** — Automates the approval routing for database access requests in Bytebase. Requests are validated against access policy, routed for sign-off where required, and provisioned on approval — with a full audit trail by default.
