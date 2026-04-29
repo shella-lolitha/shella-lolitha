@@ -16,6 +16,17 @@ The projects below are examples of that kind of work.
 
 ---
 
+## Database Optimization
+
+Beyond automation, a core part of my DBA work is keeping databases performant as data grows and usage patterns shift. I specialize in:
+
+- **Indexing strategy** — choosing the right index types, identifying bloat and redundancy, and knowing when an index hurts more than it helps under write-heavy workloads
+- **ALTER strategy** — planning schema changes on large tables without locking production, using techniques like shadow tables, online DDL, and phased rollouts to minimize risk and downtime
+- **Migration strategy** — structuring data migrations (engine, schema, or infrastructure) so they're reversible, observable, and executable without a maintenance window
+- **Table partitioning** — designing partition schemes (range, list, hash) that match actual query patterns, and managing partition lifecycle so tables don't quietly become unmanageable over time
+
+---
+
 ## Projects
 
 ### RDS Capacity Planning System
@@ -49,7 +60,7 @@ The 40% tm99 target was deliberately conservative. RDS CPU behavior is nonlinear
 ---
 
 ### DBA Automation Workflows
-`n8n` `Python` `Bytebase` `Jira` `AWS CloudWatch` `pgaudit` `PostgreSQL`
+`n8n` `Python` `Bytebase` `Jira` `Jenkins` `AWS CloudWatch` `pgaudit` `PostgreSQL`
 
 Repetitive operational work is the enemy of good database engineering — it crowds out the thinking time that actually improves the system. I've built a set of automation workflows at companies I worked for to handle the recurring tasks, so the team can stay focused on work that requires judgment.
 
